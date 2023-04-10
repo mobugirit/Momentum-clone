@@ -1,4 +1,4 @@
-const Equotes = [
+const quotes = [
   {
     quoteEn : "gold is time.",
     authorEn : "jeongwoo",
@@ -10,7 +10,6 @@ const Equotes = [
     authorEn : "anoymous",
     quoteKr : "배는 항구에 있을 때 가장 안전하지만 그것이 배의 존재 이유는 아니다.",
     authorKr : "익명"
-    
   },
   {
     quoteEn : "Not all the continuous functions are differentiable.",
@@ -47,7 +46,6 @@ const Equotes = [
     authorEn : "anonymous 50",
     quoteKr : "영원히 살 것처럼 꿈꾸고 내일 죽을 것처럼 살아라.",
     authorKr : "익명 50"
-
   },
   {
     quoteEn : "What's most important is not whether you can do it, but if you want to do it.",
@@ -62,4 +60,18 @@ const Equotes = [
     authorKr : "익명 112"
   }
 ];
+
+const quoteEn = document.querySelector("#quoteEn");
+const quoteKr = document.querySelector("#quoteKr");
+const authorEn = document.querySelector("#authorEn");
+const authorKr = document.querySelector("#authorKr");
+
+const randNumm = Math.floor(Math.random()*quotes.length);
+const todaysQuote = quotes[randNumm];
+
+quoteEn.innerText = todaysQuote.quoteEn;
+quoteKr.innerText = todaysQuote.quoteKr;
+authorEn.innerText = todaysQuote.authorEn;
+authorKr.innerText = todaysQuote.authorKr;
+
 
