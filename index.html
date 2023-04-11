@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" property="og:description" content="js로 직접 구현한 Momontum-clone">
+  <meta name="description" content="js로 직접 구현한 Momontum-clone">
+  <meta content="website" property="og:type">
+  <meta content="M Meeting I" property="og:title">
+  <meta content="js로 직접 구현한 Momontum-clone" property="og:description"> 
   <title>Momentum clone</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,6 +20,9 @@
 
   <h2 id="clock"></h2>
 
+  <form class="hidden" id="logout-Form">
+    <button>Log Out</button>
+  </form>
   <form class="hidden" id="login-Form">
     <input required type="text" placeholder="What's your name?" maxlength="15">
     <button>Log In</button>
@@ -35,7 +41,7 @@
     <div id="authorEn"></div>
     <div id="authorKr"></div>
   </div>
-  <script src = "js/login.js"></script>
+  <script src = "js/loginout.js"></script>
   <script src = "js/clock.js"></script>
   <script src = "js/bgimage.js"></script>
   <script src = "js/quote.js"></script>
